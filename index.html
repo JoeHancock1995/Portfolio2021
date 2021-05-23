@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts/stylesheet.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Joseph Hancock</title>
+
+</head>
+
+<body class="index">
+
+    <div class="header">
+        <header>
+            <div>
+                <section id="name">
+                    <a class="active" href="#">JOSEPH HANCOCK</a>
+                </section>
+            </div>
+            <nav>
+                <div id="linkedin">
+                    <a class="active" href="https://www.linkedin.com/in/joseph-hancock1995/"><img
+                            src="./assets/image/vectors/linkedin-6-48.png" style="width: 50%"></a>
+                </div>
+                <div id="github">
+                    <a class="active" href="https://github.com/JoeHancock1995"><img
+                            src="./assets/image/vectors/github-10-48.png" style="width: 50%"></a>
+                </div>
+                <div id="email">
+                    <a class="active" href=mailto: joe.hancock95@gmail.com?subject="HTML link"> <img
+                            src="./assets/image/vectors/email-12-48.png" style="width: 50%"></a>
+                </div>
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="3d-animation">
+        <section>
+            <div id="myScene">
+                <div id="overlay">
+                    <button id="startButton">Play</button>
+                </div>
+
+                <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
+                    <source src="textures/fbclip3.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                    <source src="textures/fbclip3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- <div id="container"></div> -->
+    <div id="info">
+
+        <div class="mdc-layout-grid">
+            <h2>Projects</h2>
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell">
+                    <div class="SendCodes">
+                        <img class="cardimg" src="./assets/image/send-codes1.png" alt="SendCodes" style="width:100%">
+                        <div class="mdc-layout-grid__cell">
+                            <span class="cardContent">
+                                A project for web developers to acces templates and code snippets to facilitate
+                                learning. Send-Codes is built to simplify boilerplates and access useful commands in a
+                                simple straight forward manner.
+                            </span>
+                        </div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/send-codes">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://send-codes.herokuapp.com/">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                    <div class="Reporganizer">
+                        <img class="cardimg" src="assets/image/repothumbnail.png" alt="cwg" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">Reporganizer is an easy to use
+                                interface for developers to find and sort their Repositories from GitHub.
+                                The user can create custom tags, organize, hide repos, etc.</span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/reporganizer">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://reporganizer.herokuapp.com">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                    <div class="covidapp">
+                        <img class="cardimg" src="assets/image/covidV.png" alt="trivia" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">An app displaying charts of
+                                COVID-19 cases and deaths in the United States in addition to a chart displaying
+                                the cases in Texas cities. The Texas cities chart uses the greater metropoliton area and
+                                adds up the necessary counties.</span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/COVID-19-Visualizer">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <!-- <a href="https://joehancock1995.github.io/COVID-19-Visualizer/">
+              <button class="mdc-icon-button mdc-card__action mdc-card__action--icon" title="Open project in browser">
+                <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+              </button>
+            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                    <div class="nbadashboard">
+                        <img class="cardimg" src="assets/image/nbadash.png" alt="nbadash" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">an app that displays all the NBA
+                                teams with recent scores, players, and weather in that city for the following week in a
+                                simple and straightforward layout.</span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/NBAdashboard-Version2-">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://joehancock1995.github.io/NBAdashboard-Version2-/">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                    <div class="wordGame">
+                        <img src="assets/image/wordthumbnail.png" alt="wordGame" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">Game similar to hangman where the
+                                user has to try and guess the letters of a generated word.</span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/Word-guess-game">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://joehancock1995.github.io/Word-guess-game/">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                    <div class="GooglePF">
+                        <img class="cardimg" src="assets/image/googlePF.jpg" alt="GooglePF" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">This application is a slightly
+                                updated version of the Google Phone Gallery which no longer exists using AngularJS.
+                            </span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/Google-Phone-Finder">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                    <div class="cardGame">
+                        <img class="cardimg" src="assets/image/cardthumbnail.png" alt="cardgame" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">Game which generates a random score
+                                to reach then assigns a random number to each of the four cards. The user wins if they
+                                can add up to the number given.</span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/Card-Collector">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://joehancock1995.github.io/Card-Collector/">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                    <div class="Giphy">
+                        <img class="cardimg" src="assets/image/giphythumbnail.png" alt="giphy" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">Simple project with several buttons
+                                located on it. The page will search 10 gifs from GIPHY using AJAX and display them as
+                                static images unless clicked in which they will play. User may add searchable button to
+                                find more GIFs</span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/Giphy">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://joehancock1995.github.io/Giphy/">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                    <div class="liriAPP">
+                        <img class="cardimg" src="assets/image/lirithumbnail.png" alt="liri" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">LIRI acts like iPhone's SIRI.
+                                However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a
+                                Language Interpretation and Recognition Interface. LIRI is be a command line node app
+                                which uses the axios package to send requests to the Bands in Town, Spotify and OMDB
+                                APIs gives back data.
+                            </span></div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/liri-node-app">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                    <div class="cwgAPP">
+                        <img src="assets/image/cwgthumbnail.png" alt="cwg" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">Enter Text for project</span></div>
+                        <div class="mdc-card__actions">
+                            <a href="">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://github.com/JoeHancock1995/Constructor-Word-Guess">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                    <div class="triviaGame">
+                        <img class="cardimg" src="assets/image/triviathumbnail.png" alt="trivia" style="width:100%">
+                        <div class="mdc-layout-grid__cell"><span class="cardContent">A trivia game about things nuclear
+                                weapons related. The user is asked 8 questions in 1 minute then given a score.</span>
+                        </div>
+                        <div class="mdc-card__actions">
+                            <a href="https://github.com/JoeHancock1995/TriviaGame">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="View Source Code">
+                                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">code</i>
+                                    <i class="material-icons mdc-icon-button__icon">code_border</i>
+                                </button>
+                            </a>
+                            <a href="https://joehancock1995.github.io/TriviaGame/">
+                                <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+                                    title="Open project in browser">
+                                    <i
+                                        class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">open_in_browser</i>
+                                    <i class="material-icons mdc-icon-button__icon">open_in_browser_border</i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="module">
+
+        import * as THREE from '../build/three.module.js';
+
+        import { EffectComposer } from './jsm/postprocessing/EffectComposer.js';
+        import { RenderPass } from './jsm/postprocessing/RenderPass.js';
+        import { ShaderPass } from './jsm/postprocessing/ShaderPass.js';
+        import { BloomPass } from './jsm/postprocessing/BloomPass.js';
+        import { CopyShader } from './jsm/shaders/CopyShader.js';
+        import { GlitchPass } from './jsm/postprocessing/GlitchPass.js';
+        import { RGBShiftShader } from './jsm/shaders/RGBShiftShader.js';
+        import { DotScreenShader } from './jsm/shaders/DotScreenShader.js';
+
+
+        var container;
+
+        var camera, scene, renderer;
+
+        var video, texture, material, mesh;
+
+        var composer;
+
+        var mouseX = 0;
+        var mouseY = 0;
+
+        var windowHalfX = window.innerWidth / 2;
+        var windowHalfY = window.innerHeight / 2;
+
+        var cube_count,
+
+            meshes = [],
+            materials = [],
+
+            xgrid = 25,
+            ygrid = 10;
+
+        var startButton = document.getElementById('startButton');
+        startButton.addEventListener('click', function () {
+
+            init();
+            animate();
+
+        }, false);
+
+        function init() {
+
+            var overlay = document.getElementById('overlay');
+            overlay.remove();
+
+            container = document.createElement('div');
+            document.body.appendChild(container);
+
+            camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 1000);
+            camera.position.z = 500;
+
+            scene = new THREE.Scene();
+
+            var light = new THREE.DirectionalLight(0xffffff);
+            light.position.set(0.5, 1, 1).normalize();
+            scene.add(light);
+
+            renderer = new THREE.WebGLRenderer();
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            container.appendChild(renderer.domElement);
+            //   window.addEventListener('resize', function () {
+            //   var width = window.innerWidth;
+            //   var height = window.innerHeight;
+            //   renderer.setSize(width, height);
+            //   camera.aspect = width / height;
+            //   camera.updateProjectionMatrix();
+            // })
+            video = document.getElementById('video');
+            video.play();
+            video.addEventListener('play', function () {
+                this.currentTime = 3;
+            }, false);
+
+            texture = new THREE.VideoTexture(video);
+
+            //
+
+            var i, j, ux, uy, ox, oy,
+                geometry,
+                xsize, ysize;
+
+            ux = 1 / xgrid;
+            uy = 1 / ygrid;
+
+            xsize = 480 / xgrid;
+            ysize = 274 / ygrid;
+
+            var parameters = { color: 0xffffff, map: texture };
+
+            cube_count = 0;
+
+            for (i = 0; i < xgrid; i++)
+                for (j = 0; j < ygrid; j++) {
+
+                    ox = i;
+                    oy = j;
+
+                    geometry = new THREE.BoxBufferGeometry(xsize, ysize, xsize);
+
+                    change_uvs(geometry, ux, uy, ox, oy);
+
+                    materials[cube_count] = new THREE.MeshLambertMaterial(parameters);
+
+                    material = materials[cube_count];
+
+                    material.hue = i / xgrid;
+                    material.saturation = 1 - j / ygrid;
+
+                    material.color.setHSL(material.hue, material.saturation, 0.5);
+
+                    mesh = new THREE.Mesh(geometry, material);
+
+                    mesh.position.x = (i - xgrid / 2) * xsize;
+                    mesh.position.y = (j - ygrid / 3) * ysize;
+                    mesh.position.z = 0;
+
+                    mesh.scale.x = mesh.scale.y = mesh.scale.z = 1;
+
+                    scene.add(mesh);
+
+                    // first number represents speed the cubes do relevant animations 
+
+                    mesh.dx = 0.001 * (0.05 - Math.random());
+                    mesh.dy = 0.001 * (0.05 - Math.random());
+
+                    meshes[cube_count] = mesh;
+
+                    cube_count += 1;
+
+                }
+
+            renderer.autoClear = false;
+
+            document.addEventListener('mousemove', onDocumentMouseMove, false);
+
+            // postprocessing
+
+            var renderModel = new RenderPass(scene, camera);
+            var effectBloom = new BloomPass(1);
+            var glitchPass = new GlitchPass();
+            var effectCopy = new ShaderPass(DotScreenShader);
+            effectCopy.uniforms['scale'].value = 5;
+            composer = new EffectComposer(renderer);
+
+            composer.addPass(renderModel);
+            composer.addPass(effectBloom);
+            composer.addPass(effectCopy);
+            composer.addPass(glitchPass);
+            // composer.addPass( afterimagePass);
+
+            //
+
+            window.addEventListener('resize', onWindowResize, false);
+
+        }
+
+        function onWindowResize() {
+
+            windowHalfX = window.innerWidth / 2;
+            windowHalfY = window.innerHeight / 2;
+
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            composer.setSize(window.innerWidth, window.innerHeight);
+
+        }
+
+        function change_uvs(geometry, unitx, unity, offsetx, offsety) {
+
+            var uvs = geometry.attributes.uv.array;
+
+            for (var i = 0; i < uvs.length; i += 2) {
+
+                uvs[i] = (uvs[i] + offsetx) * unitx;
+                uvs[i + 1] = (uvs[i + 1] + offsety) * unity;
+
+            }
+
+        }
+
+
+        function onDocumentMouseMove(event) {
+
+            mouseX = (event.clientX - windowHalfX)
+            mouseY = (event.clientY - windowHalfY) * 0.3;
+
+        }
+
+        //
+
+        function animate() {
+
+            requestAnimationFrame(animate);
+
+            render();
+
+        }
+
+        var h, counter = 1;
+
+        function render() {
+
+            var time = Date.now() * 0.00005;
+
+            camera.position.x += (mouseX - camera.position.x) * 0.05;
+            camera.position.y += (- mouseY - camera.position.y) * 0.05;
+
+            camera.lookAt(scene.position);
+
+            for (var i = 0; i < cube_count; i++) {
+
+                material = materials[i];
+
+                h = (360 * (material.hue + time) % 360) / 360;
+                material.color.setHSL(h, material.saturation, 1);
+
+            }
+
+            if (counter % 1000 > 200) {
+
+                for (var i = 0; i < cube_count; i++) {
+
+                    mesh = meshes[i];
+
+                    mesh.rotation.x += 15 * mesh.dx;
+                    mesh.rotation.y += 10 * mesh.dy;
+
+                    mesh.position.x -= 150 * mesh.dx;
+                    mesh.position.y += 100 * mesh.dy;
+                    mesh.position.z += 305 * mesh.dx;
+
+                }
+
+            }
+
+            if (counter % 2000 === 0) {
+
+                for (var i = 0; i < cube_count; i++) {
+
+                    mesh = meshes[i];
+
+                    mesh.dx *= - 1;
+                    mesh.dy *= - 1;
+
+                }
+
+            }
+
+            counter++;
+
+            renderer.clear();
+            composer.render();
+
+        }
+
+
+    </script>
+    <!-- <script src= "./assets/js/three.js"></script> -->
+    <!-- <script src="./assets/js/app.js"></script> -->
+
+</body>
+
+</html>

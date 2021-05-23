@@ -1,0 +1,432 @@
+.index {
+  /* background-image: url(ed_comressed2.gif); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ width: 100%;
+  background-color: black;
+  font-family: 'Crash';
+}
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#info {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 0px;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 100; /* TODO Solve this in HTML */
+}
+
+a, button, input, select {
+	pointer-events: auto;
+	color: #ffffff;
+}
+
+.dg.ac {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+#overlay {
+	position: absolute;
+	z-index: 2;
+	top: 50;
+	left: 0;
+	width: 95%;
+	height: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.7);
+}
+
+	#overlay button {
+		background: #000000;
+		border: 2 solid;
+		border-color: white;
+		color: #ffffff;
+		padding: 16px 20px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+#notSupported {
+	width: 50%;
+	margin: auto;
+	background-color: #f00;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.mdc-layout-grid__cell{
+line-height: 20px;
+padding-top: 30px;
+padding-left: 10px;
+padding-right: 10px;
+width: 90%;
+}
+.cardContent{
+  font-family: "ticketing";
+  color: grey;
+}
+i {color: white;}
+.mdc-content {
+  padding: 16px;
+  color: white;
+  
+}
+
+.mdc-card {
+  color: white;
+  height: 350px;
+  width: 350px;
+}
+
+#name{
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: 60px;
+}
+#info{
+  top: 0px;
+  margin-top: 20%;
+}
+#info .mdc-layout-grid{
+  margin-top: 28%;
+}
+.clock {
+  position: absolute;
+  top: 5%;
+  left:75%;
+  color: white;
+  font-size: 48px;
+  font-family: 'Conman Regular';
+  letter-spacing: 2px;
+}
+/*this styles the structure of the navbar*/
+header div,
+header div::before,
+header nav,
+header div h1 {
+   display: inline-block;
+   vertical-align: middle;
+   margin:5px;
+}
+header nav a {
+   white-space: nowrap;
+   text-decoration: white;
+}
+.active {
+  color: white;
+  /* padding: 2px; */
+  /* margin-right: 10px; */
+  white-space: nowrap;
+   text-decoration: white;
+}
+
+/*styles body of pages*/
+span{
+  color: #ffffff;
+}
+h2 {
+  color: white;
+  text-align: left;
+  font-size: 54px;
+ }
+ .port {
+   text-align: center;
+ }
+img{ 
+  height: 100%;
+  width: 100%;
+}
+ /* #box {
+   text-align: center;
+   font-size: 66px;
+   margin-top: 100px;
+   margin-right: 10%;
+   margin-left: 10%;
+ } */
+ /* .container {
+  text-align: center;
+  padding: 10px;
+  float: none;
+  font-size: 80px;
+ } */
+
+#profiles{
+  margin-left: 1%;
+  font-size: 20px;
+  text-align: left;
+}
+
+img{
+  float: left;
+  box-sizing: border-box;
+  border-left: 0px;
+}
+p {
+  align-self: auto;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.wordGame {
+  border: 5px outset;
+  float: left;
+}
+.cardGame {
+  border: 5px outset;
+  float: left;
+}
+.cardimg {
+  border: 1px rgb(255, 255, 255) solid;
+}
+.triviaGame {
+  border: 5px outset;
+  float: left;
+}
+
+.Giphy {
+  border: 5px outset;
+  float: left;
+}
+
+.SendCodes {
+  border: 5px outset;
+  float: left;
+}
+.nbadashboard {
+  border: 5px outset;
+  float: left;
+}
+.GooglePF {
+  border: 5px outset;
+  float: left;
+}
+.liriAPP {
+  border: 5px outset;
+  float: left;
+}
+.cwgAPP {
+  border: 5px outset;
+  float: left;
+}
+.Reporganizer{
+  border: 5px outset;
+  float: left;
+}
+.covidapp{
+  border: 5px outset;
+  float: left;
+}
+@media only screen and (max-width: 1024px){
+  #info{
+    margin-top: 90%;
+  }
+}
+@media only screen and (max-width:980px) {
+  body{
+    width: 100%; height: 100%;
+  }
+  .index{
+    width: 100%;
+    margin: 0;
+  }
+  #info{
+    width: 100%;
+    margin-top: 800px;
+  }
+
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .mdc-layout-grid{
+    margin-top: 800px;
+  }
+  img{
+    height: auto;
+    width: 50%;
+  }
+  header .container {
+    padding: 0;
+  }
+
+
+  nav {
+    width: 50%;
+    margin-left: 22%;
+    padding-left: 22%;
+    /* margin-top: 5px; */
+    text-align: center;
+  }
+  #linkedin{
+    width: 20%;
+  }
+ 
+  #github{
+    width: 20%;
+  }
+  #email{
+    width: 20%;
+  }
+  #name{
+    font-size: 46px;
+    margin: 3.5%;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    width: 100%; height: 100%;
+  }
+  .index{
+    width: 100%;
+    margin: 0;
+  }
+  #info{
+    width: 100%;
+    margin-top: 800px;
+  }
+
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .mdc-layout-grid{
+    margin-top: 800px;
+  }
+  img{
+    height: auto;
+    width: 50%;
+  }
+  header .container {
+    padding: 0;
+  }
+
+
+  nav {
+    width: 50%;
+    margin-left: 22%;
+    padding-left: 22%;
+    /* margin-top: 5px; */
+    text-align: center;
+  }
+  #linkedin{
+    width: 20%;
+  }
+ 
+  #github{
+    width: 20%;
+  }
+  #email{
+    width: 20%;
+  }
+  #name{
+    font-size: 40px;
+    /* margin: 3.5%; */
+  }
+
+}
+
+@media only screen and (max-width: 640px){
+  body{
+    width: 100%; height: 100%;
+  }
+  .index{
+    width: 100%;
+    margin: 0;
+  }
+  #info{
+    width: 100%;
+    margin-top: 800px;
+  }
+
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .mdc-layout-grid{
+    margin-top: 800px;
+  }
+  img{
+    height: auto;
+    width: 50%;
+  }
+  header .container {
+    padding: 0;
+  }
+
+
+  nav {
+    width: 50%;
+    margin-left: 2%;
+    padding-left: 2%;
+    /* margin-top: 5px; */
+    text-align: left;
+  }
+  #linkedin{
+    width: 20%;
+  }
+ 
+  #github{
+    width: 20%;
+  }
+  #email{
+    width: 20%;
+  }
+  #name{
+    font-size: 40px;
+    /* margin: 3.5%; */
+  }
+
+}
+
+@media only screen and (max-width: 640px){
+  #name{
+    font-size: 32px;
+    width: 100%;
+    text-align: left;
+    
+  }
+  #info{
+    margin-top: 600px;
+  }
+  h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+}
+/* h3 {
+  text-decoration-line: underline;
+  color: white;
+}
+/* section{
+  line-height: 55px;
+} */
+
+
+/* Specifies the space between the edge of the grid and the edge of the first cell
+mdc-layout-grid-margin-<TYPE_OF_DEVICE>
+Specifies the space between edges of adjacent cells
+mdc-layout-grid-gutter-<TYPE_OF_DEVICE>	 */
