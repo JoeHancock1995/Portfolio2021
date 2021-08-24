@@ -79,11 +79,11 @@
 // });
 
 import * as THREE from '../build/three.module.js';
-import { EffectComposer } from './jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from './jsm/postprocessing/RenderPass.js';
-import { ShaderPass } from './jsm/postprocessing/ShaderPass.js';
-import { BloomPass } from './jsm/postprocessing/BloomPass.js';
-import { CopyShader } from './jsm/shaders/CopyShader.js';
+// import { EffectComposer } from './jsm/postprocessing/EffectComposer.js';
+// import { RenderPass } from './jsm/postprocessing/RenderPass.js';
+// import { ShaderPass } from './jsm/postprocessing/ShaderPass.js';
+// import { BloomPass } from './jsm/postprocessing/BloomPass.js';
+// import { CopyShader } from './jsm/shaders/CopyShader.js';
 
 var container;
 
@@ -173,33 +173,33 @@ function init() {
       ox = i;
       oy = j;
 
-      geometry = new THREE.BoxBufferGeometry(xsize, ysize, xsize);
+      // geometry = new THREE.BoxBufferGeometry(xsize, ysize, xsize);
 
-      change_uvs(geometry, ux, uy, ox, oy);
+      // change_uvs(geometry, ux, uy, ox, oy);
 
-      materials[cube_count] = new THREE.MeshLambertMaterial(parameters);
+      // materials[cube_count] = new THREE.MeshLambertMaterial(parameters);
 
-      material = materials[cube_count];
+      // material = materials[cube_count];
 
-      material.hue = i / xgrid;
-      material.saturation = 1 - j / ygrid;
+      // material.hue = i / xgrid;
+      // material.saturation = 1 - j / ygrid;
 
-      material.color.setHSL(material.hue, material.saturation, 0.5);
+      // material.color.setHSL(material.hue, material.saturation, 0.5);
 
-      mesh = new THREE.Mesh(geometry, material);
+      // mesh = new THREE.Mesh(geometry, material);
 
-      mesh.position.x = (i - xgrid / 2) * xsize;
-      mesh.position.y = (j - ygrid / 3) * ysize;
-      mesh.position.z = 0;
+      // mesh.position.x = (i - xgrid / 2) * xsize;
+      // mesh.position.y = (j - ygrid / 3) * ysize;
+      // mesh.position.z = 0;
 
-      mesh.scale.x = mesh.scale.y = mesh.scale.z = 1;
+      // mesh.scale.x = mesh.scale.y = mesh.scale.z = 1;
 
-      scene.add(mesh);
+      // scene.add(mesh);
 
-      mesh.dx = 0.001 * (0.05 - Math.random());
-      mesh.dy = 0.001 * (0.05 - Math.random());
+      // mesh.dx = 0.001 * (0.05 - Math.random());
+      // mesh.dy = 0.001 * (0.05 - Math.random());
 
-      meshes[cube_count] = mesh;
+      // meshes[cube_count] = mesh;
 
       cube_count += 1;
 
@@ -211,15 +211,15 @@ function init() {
 
   // postprocessing
 
-  var renderModel = new RenderPass(scene, camera);
-  var effectBloom = new BloomPass(1);
-  var effectCopy = new ShaderPass(CopyShader);
+  // var renderModel = new RenderPass(scene, camera);
+  // var effectBloom = new BloomPass(1);
+  // var effectCopy = new ShaderPass(CopyShader);
 
-  composer = new EffectComposer(renderer);
+  // composer = new EffectComposer(renderer);
 
-  composer.addPass(renderModel);
-  composer.addPass(effectBloom);
-  composer.addPass(effectCopy);
+  // composer.addPass(renderModel);
+  // composer.addPass(effectBloom);
+  // composer.addPass(effectCopy);
 
   //
 
