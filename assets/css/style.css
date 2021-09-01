@@ -3,11 +3,13 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
- width: 100%;
+ width: 96%;
   background-color: black;
   font-family: 'Crash';
 }
-#name{ font-family: 'c39hrp24dhttnormal';
+#name{
+
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
   color: #ffffff;
   white-space: nowrap;
   font-size: 120px;
