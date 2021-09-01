@@ -5,14 +5,13 @@
   background-attachment: fixed;
  width: 96%;
   background-color: black;
-  font-family: 'Crash';
-}
+  font-family: 'Libre Barcode 39 Extended Text', cursive;}
 #name{
 
   font-family: 'Libre Barcode 39 Extended Text', cursive;
   color: #ffffff;
   white-space: nowrap;
-  font-size: 120px;
+  font-size: 80px;
 
   }
 button {
@@ -65,7 +64,7 @@ a, button, input, select {
 
 	#overlay button {
 		background: #000000;
-		border: 2 solid;
+		border: 1 solid;
 		border-color: white;
 		color: #ffffff;
 		padding: 16px 20px;
